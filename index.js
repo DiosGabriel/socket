@@ -2,8 +2,8 @@ var express = require('express');
 var socket = require('socket.io');
 
 var app = express();
-var server = app.listen(4000, "0.0.0.0", () => {
-  console.log("Servidor en puerto 4000");
+var server = app.listen(4000, function(){
+    console.log('Servidor corriendo en http://localhost:4000');
 });
 
 
