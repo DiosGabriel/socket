@@ -1,3 +1,6 @@
+// ...existing code...
+var audioSend = new Audio('send.mp3');
+// ...existing code...
 var socket = io.connect('http://localhost:4000');
 var persona = document.getElementById('persona'),
     appChat = document.getElementById('app-chat'),
