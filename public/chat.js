@@ -31,7 +31,6 @@ mensaje.addEventListener('keyup', function(){
 socket.on('chat', function(data){
     escribiendoMensaje.innerHTML = '';
     output.innerHTML += '<p><strong> ' + data.usuario + ': </strong>' + data.mensaje + ' </p>';
-    audioSend.play(); // Reproduce el sonido al recibir mensaje
 });
 
 socket.on('typing', function(data){

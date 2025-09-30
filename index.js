@@ -6,6 +6,8 @@ var server = app.listen(4000, function(){
     console.log('Servidor corriendo en http://localhost:4000');
 });
 
+
+
 app.use(express.static('public'));
 
 var io = socket(server);
