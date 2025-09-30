@@ -1,5 +1,5 @@
-var audioSend = new Audio('send.mp3');
-var socket = io.connect('http://18.118.156.207:4000');
+var audioSend = new Audio('notificacion.mp3');
+var socket = io.connect('http://18.118.156.207/:4000');
 var persona = document.getElementById('persona'),
     appChat = document.getElementById('app-chat'),
     panelBienvenida = document.getElementById('panel-bienvenida'),
@@ -31,6 +31,7 @@ mensaje.addEventListener('keyup', function(){
 socket.on('chat', function(data){
     escribiendoMensaje.innerHTML = '';
     output.innerHTML += '<p><strong> ' + data.usuario + ': </strong>' + data.mensaje + ' </p>';
+    audioSend.play(); // <-- Esta línea reproduce el sonido
 });
 
 socket.on('typing', function(data){
