@@ -1,5 +1,5 @@
 var audioSend = new Audio('notificacion.mp3');
-var socket = io.connect('http://18.118.156.207/:4000');
+var socket = io.connect('http://18.118.156.207:4000');
 var persona = document.getElementById('persona'),
     appChat = document.getElementById('app-chat'),
     panelBienvenida = document.getElementById('panel-bienvenida'),
